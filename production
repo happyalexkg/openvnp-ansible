@@ -1,2 +1,2 @@
 [openvpn-client]
-176.126.167.251 ansible_ssh_user=openvpn
+client_ip_server ansible_ssh_user=openvpn
