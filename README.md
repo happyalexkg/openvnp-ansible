@@ -12,10 +12,9 @@ Requirements
 Openvpn must be available as a package in apt!
 
 Role Variables
+
 openvpn_dev_server:The device you want OpenVPN to use (example:tun)
-
 openvpn_ca_cert:The CA certificate
-
 openvpn_cert: The client certificate\n
 openvpn_key_private:The Private Key from certificate\n
 openvpn_tls_auth: The OpenVPN static key\n
