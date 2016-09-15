@@ -1,0 +1,30 @@
+client
+nobind
+dev {{openvpn_dev_server}}
+remote-cert-tls {{openvpn_remote_cert}}
+remote {{openvpn_remote_ip}} {{openvpn_remote_port}} {{openvpn_remote_protocol}}
+<key>
+-----BEGIN PRIVATE KEY-----
+{{openvpn_key_private}}
+-----END PRIVATE KEY-----
+</key>
+<cert>
+-----BEGIN CERTIFICATE-----
+{{openvpn_cert}}
+-----END CERTIFICATE-----
+</cert>
+<ca>
+-----BEGIN CERTIFICATE-----
+{{openvpn_ca_cert}}
+-----END CERTIFICATE-----
+</ca>
+<tls-auth>
+#
+# 2048 bit OpenVPN static key
+#
+-----BEGIN OpenVPN Static key V1-----
+{{openvpn_tls_auth}}
+-----END OpenVPN Static key V1-----
+</tls-auth>
+key-direction {{openvpn_key_dir}}
+comp-lzo
