@@ -1,0 +1,8 @@
+---
+openvpn_dev_server: "tun"
+openvpn_key_dir: "1"
+openvpn_remote_cert: "server"
+openvpn_remote_ip: "8.8.8.8"
+openvpn_remote_port: "88"
+openvpn_remote_protocol: "udp"
+openvpn_version: "2.3.2-7ubuntu3.1"

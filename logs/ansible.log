@@ -1,0 +1,30 @@
+
+2016-09-15 04:19:04,641 p=8130 u=root |   
+2016-09-15 04:19:04,642 p=8130 u=root |  /usr/bin/ansible-playbook -i production openvpn.yml
+2016-09-15 04:19:04,642 p=8130 u=root |   
+2016-09-15 04:19:04,693 p=8130 u=root |  PLAY [openvpn-client] ********************************************************* 
+2016-09-15 04:19:04,694 p=8130 u=root |  GATHERING FACTS *************************************************************** 
+2016-09-15 04:19:04,830 p=8130 u=root |  fatal: [client_server] => SSH encountered an unknown error during the connection. We recommend you re-run the command using -vvvv, which will enable SSH debugging output to help diagnose the issue
+2016-09-15 04:19:04,833 p=8130 u=root |  TASK: [openvpn | Install OpenVPN] ********************************************* 
+2016-09-15 04:19:04,859 p=8130 u=root |  FATAL: no hosts matched or all hosts have already failed -- aborting
+
+2016-09-15 04:19:04,862 p=8130 u=root |  PLAY RECAP ******************************************************************** 
+2016-09-15 04:19:04,863 p=8130 u=root |             to retry, use: --limit @/root/openvpn.retry
+
+2016-09-15 04:19:04,864 p=8130 u=root |  client_server              : ok=0    changed=0    unreachable=1    failed=0   
+2016-09-15 04:19:17,061 p=8161 u=root |   
+2016-09-15 04:19:17,062 p=8161 u=root |  /usr/bin/ansible-playbook -i production openvpn.yml
+2016-09-15 04:19:17,062 p=8161 u=root |   
+2016-09-15 04:19:17,112 p=8161 u=root |  PLAY [openvpn-client] ********************************************************* 
+2016-09-15 04:19:17,113 p=8161 u=root |  GATHERING FACTS *************************************************************** 
+2016-09-15 04:19:20,648 p=8161 u=root |  ok: [176.126.167.251]
+2016-09-15 04:19:20,737 p=8161 u=root |  TASK: [openvpn | Install OpenVPN] ********************************************* 
+2016-09-15 04:19:47,648 p=8161 u=root |  changed: [176.126.167.251]
+2016-09-15 04:19:47,651 p=8161 u=root |  TASK: [openvpn | Install OpenSSL] ********************************************* 
+2016-09-15 04:19:53,664 p=8161 u=root |  ok: [176.126.167.251]
+2016-09-15 04:19:53,667 p=8161 u=root |  TASK: [openvpn | Generate config file] **************************************** 
+2016-09-15 04:19:54,385 p=8161 u=root |  ok: [176.126.167.251]
+2016-09-15 04:19:54,389 p=8161 u=root |  TASK: [openvpn | Start OpenVPN] *********************************************** 
+2016-09-15 04:19:55,001 p=8161 u=root |  ok: [176.126.167.251]
+2016-09-15 04:19:55,004 p=8161 u=root |  PLAY RECAP ******************************************************************** 
+2016-09-15 04:19:55,005 p=8161 u=root |  176.126.167.251            : ok=5    changed=1    unreachable=0    failed=0   
