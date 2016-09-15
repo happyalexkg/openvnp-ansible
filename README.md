@@ -23,7 +23,6 @@ openvpn_remote_port: Remote host port
 openvpn_remote_protocol: Remote host protocol
 
 
-
 Dependencies
 Does not depend on any other roles
 
